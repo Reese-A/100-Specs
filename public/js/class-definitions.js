@@ -967,12 +967,12 @@ Scientist.prototype = Object.create(Person.prototype);
  * @param {string} gender  male or female
  */
 
- class Animal {
-   constructor(species, gender){
-     this.species = species;
-     this.gender = gender;
-   }
- }
+class Animal {
+  constructor(species, gender) {
+    this.species = species;
+    this.gender = gender;
+  }
+}
 
 /**
  * Step 51
@@ -982,12 +982,12 @@ Scientist.prototype = Object.create(Person.prototype);
  * @param {string} model The vehicle's model
  */
 
- class Vehicle {
-   constructor(make, model){
-     this.make = make;
-     this.model = model;
-   }
- }
+class Vehicle {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+}
 
 /**
  * Step 52
@@ -999,14 +999,14 @@ Scientist.prototype = Object.create(Person.prototype);
  *
  */
 
- class Shape{
-   constructor(sides){
-     if(sides >= 3){
-     this.sides = sides;
-   }else{
-     this.sides = null;
-   }
- }
+class Shape {
+  constructor(sides) {
+    if (sides >= 3) {
+      this.sides = sides;
+    } else {
+      this.sides = null;
+    }
+  }
 }
 
 /**
@@ -1017,6 +1017,12 @@ Scientist.prototype = Object.create(Person.prototype);
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
+class Box{
+  constructor(contents, isOpen){
+    this.contents = contents;
+    this.isOpen = isOpen;
+  }
+}
 
 /**
  * Step 54
