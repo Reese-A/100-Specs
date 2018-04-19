@@ -263,7 +263,7 @@ let livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Fami
  *
  */
 
-
+let scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
 /* Step 19
  *
  * Define a literal object named "beers" with
