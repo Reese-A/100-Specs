@@ -3,7 +3,9 @@
  * Declare a variable named "unicorn"
  * then set it's value to null;
  *
- */
+*/
+
+let unicorn = null;
 
 
 /* Step 2
