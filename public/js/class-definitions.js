@@ -36,6 +36,7 @@ let unicorn = null;
  * Capitalize the names.
  */
 
+ let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
 /* Step 5
  *
