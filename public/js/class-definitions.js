@@ -1017,8 +1017,8 @@ class Shape {
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
 
-class Box{
-  constructor(contents, isOpen){
+class Box {
+  constructor(contents, isOpen) {
     this.contents = contents;
     this.isOpen = isOpen;
   }
@@ -1031,11 +1031,11 @@ class Box{
  * @param {boolean} isOpen Whether the door is opened or closed
  */
 
- class Door{
-   constructor(isOpen){
-     this.isOpen = isOpen;
-   }
- }
+class Door {
+  constructor(isOpen) {
+    this.isOpen = isOpen;
+  }
+}
 
 /**
  * Step 55
@@ -1045,12 +1045,12 @@ class Box{
  * @param {string} color The shoe color
  */
 
- class Shoe{
-   constructor(size, color){
-     this.size = size;
-     this.color = color;
-   }
- }
+class Shoe {
+  constructor(size, color) {
+    this.size = size;
+    this.color = color;
+  }
+}
 
 /**
  * Step 56
@@ -1059,11 +1059,11 @@ class Box{
  * @param {number} stories How many stories tall the house is
  */
 
- class House{
-   constructor(stories){
-     this.stories = stories;
-   }
- }
+class House {
+  constructor(stories) {
+    this.stories = stories;
+  }
+}
 
 /**
  * Step 57
@@ -1072,11 +1072,11 @@ class Box{
  * @param {boolean} isOn Whether the light is on or off
  */
 
- class Lightbulb {
-   constructor(isOn){
-     this.isOn = isOn;
-   }
- }
+class Lightbulb {
+  constructor(isOn) {
+    this.isOn = isOn;
+  }
+}
 
 /**
  * Step 58
@@ -1085,11 +1085,11 @@ class Box{
  * @param {string} flavor The cookie's flavor
  */
 
- class Cookie{
-   constructor(flavor){
-     this.flavor = flavor;
-   }
- }
+class Cookie {
+  constructor(flavor) {
+    this.flavor = flavor;
+  }
+}
 
 /**
  * Step 59
@@ -1098,11 +1098,11 @@ class Box{
  * @param {Array} foods All the foods in the meal
  */
 
- class Meal{
-   constructor(foods){
-     this.foods = foods;
-   }
- }
+class Meal {
+  constructor(foods) {
+    this.foods = foods;
+  }
+}
 
 /**
  * Create a new instance of the Classes you defined above, below!
@@ -1111,7 +1111,7 @@ class Box{
 
 
 // Create 2 different species of animals
-var george =  new Animal('Monkey', 'male');
+var george = new Animal('Monkey', 'male');
 var nemo = new Animal('Fish', 'male');
 
 // Create 2 different vehicles
@@ -1120,7 +1120,7 @@ var forte = new Vehicle('KIA', 'Forte');
 
 // Create 2 shapes with different numbers of sides
 var square = new Shape(4);
-var hexagon;
+var hexagon = new Shape(6);
 
 // Create 2 boxes
 var catBox;
