@@ -642,32 +642,34 @@ function SolarSystem() {
  */
 
 function PrincessLeia(name, money, age, gender) {
-  this.isInTrouble = null;
-  Person.call(this, name, money, age, gender);
-
-  PrincessLeia.prototype.shootsGun = function () {
-    this.isInTrouble = false;
-    return "Leia shoots her gun wildly";
-  }
-  PrincessLeia.prototype.getsInTrouble = function () {
-    this.isInTrouble = true;
-    return "Help me Obi-wan Kenobi, you're my only hope";
-  }
-  PrincessLeia.prototype.marries = function (person) {
-    if (person === "Han Solo") {
-      return true;
-    }
-    if (person === "Luke Skywalker") {
-      return "Gross!";
-    }
-    return false;
-  }
+  const _this = new Person(name, money, age, gender);
+  _this.isInTrouble = null;
+  _this.__proto__ = PrincessLeia.prototype;
+  return _this;
 }
 PrincessLeia.prototype = Object.create(Person.prototype, {
   constructor: {
     value: Person
   }
 });
+
+PrincessLeia.prototype.shootsGun = function () {
+  this.isInTrouble = false;
+  return "Leia shoots her gun wildly";
+}
+PrincessLeia.prototype.getsInTrouble = function () {
+  this.isInTrouble = true;
+  return "Help me Obi-wan Kenobi, you're my only hope";
+}
+PrincessLeia.prototype.marries = function (person) {
+  if (person === "Han Solo") {
+    return true;
+  }
+  if (person === "Luke Skywalker") {
+    return "Gross!";
+  }
+  return false;
+}
 
 
 /* Step 34
@@ -692,7 +694,7 @@ function Stapler(color, maxPapers) {
   this.color = color;
   this.maxPapers = maxPapers;
   Stapler.prototype.staplePapers = function (number) {
-    if(number <= maxPapers){
+    if (number <= maxPapers) {
       return true;
     }
     return false;
@@ -738,7 +740,39 @@ function Stapler(color, maxPapers) {
  *
  */
 
+function Scientist(name, money, age, gender) {
+  // Person.call(this, name, money, age, gender)
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.disciplines = [];
+  this.discoveries = [];
+  Scientist.prototype.addDiscipline = function (discipline) {
+    this.disciplines.push(discipline);
+  }
+  Scientist.prototype.checkDiscipline = function (check) {
+    return this.disciplines.includes(check);
+  }
+  Scientist.prototype.addDiscovery = function (discovery) {
+    this.discoveries.push(discovery);
+    if (this.discoveries.length === 1) {
+      return `I discovered ${this.discoveries[0]}.`;
+    }
+    if (this.discoveries.length === 2) {
+      return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`;
+    }
+    if (this.discoveries.length > 2) {
+      let result = ''
+      for (let i = 0; i < this.discoveries.length - 1; i++) {
+        result += this.discoveries[i] + ', ';
+      }
+      return `I discovered ${result}and ${this.discoveries[this.discoveries.length - 1]}.`;
+    }
+  }
+}
 
+Scientist.prototype = Object.create(Person.prototype);
 /* Step 36
  *
  * Define an ES5 class named "BankAccount" that has properties
