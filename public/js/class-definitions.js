@@ -641,7 +641,34 @@ class Person {
  *
  */
 
+ function PrincessLeia(name, money, age, gender){
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.isInTrouble = null;
 
+  PrincessLeia.prototype.shootsGun = function () {
+    this.isInTrouble = false;
+    return "Leia shoots her gun wildly";
+  }
+  PrincessLeia.prototype.getsInTrouble = function(){
+    this.isInTrouble = true;
+    return "Help me Obi-wan Kenobi, you're my only hope";
+  }
+  PrincessLeia.prototype.marries = function(person){
+    if(person === "Han Solo"){
+      return true;
+    }
+    if(person === "Luke Skywalker"){
+      return "Gross!";
+    }
+    return false;
+  }
+ }
+ PrincessLeia.prototype = Object.create(Person.prototype);
+
+ 
 /* Step 34
  *
  * Define an ES5 class named "Stapler" with properties "color"
