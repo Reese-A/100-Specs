@@ -25,6 +25,8 @@ let unicorn = null;
  *
  */
 
+ let sahara_animal = "The Addax"
+
 
 /* Step 4
  *
