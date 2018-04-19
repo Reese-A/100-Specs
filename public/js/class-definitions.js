@@ -301,8 +301,9 @@ let scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
  *
  */
 
- let sahara_river = 'Nile River';
-
+function sahara_river(){
+  return 'Nile River';
+}
 /* Step 21
  *
  * Define a function named "addNumbers"
