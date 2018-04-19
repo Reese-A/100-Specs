@@ -485,12 +485,12 @@ class Person {
  *
  */
 
- function purchaseLaptop(laptop){
-   if (laptopCosts.hasOwnProperty(laptop)){
-     return `${laptopCosts[laptop]}`;
-   }
-   return -1;
- }
+function purchaseLaptop(laptop) {
+  if (laptopCosts.hasOwnProperty(laptop)) {
+    return `${laptopCosts[laptop]}`;
+  }
+  return -1;
+}
 
 /* Step 29
  *
@@ -504,12 +504,12 @@ class Person {
  *
  */
 
- function canTalkAbout(club){
-   if(club === club_name){
-     return false;
-   }
-   return true;
- }
+function canTalkAbout(club) {
+  if (club === club_name) {
+    return false;
+  }
+  return true;
+}
 
 /* Step 30
  *
@@ -532,12 +532,12 @@ class Person {
  *
  */
 
- function Pen(color){
-   this.color = color;
-   Pen.prototype.write = function(message){
-     return `${color}: ${message}`;
-   }
- }
+function Pen(color) {
+  this.color = color;
+  Pen.prototype.write = function (message) {
+    return `${color}: ${message}`;
+  }
+}
 
 /* Step 31
  *
@@ -566,20 +566,20 @@ class Person {
  *
  */
 
- function Garden(plantsTotal){
+function Garden(plantsTotal) {
   this.plantsTotal = plantsTotal;
   this.isWatered = false;
-  Garden.prototype.water = function(){
+  Garden.prototype.water = function () {
     this.isWatered = true;
   }
-  Garden.prototype.grow = function(){
-    if(this.isWatered === true){
+  Garden.prototype.grow = function () {
+    if (this.isWatered === true) {
       this.plantsTotal++;
       this.isWatered = false;
     }
     return false;
   }
- }
+}
 
 /* Step 32
  *
@@ -598,15 +598,15 @@ class Person {
  *
  */
 
- function SolarSystem(){
-   this.planets = [];
-   SolarSystem.prototype.addPlanet = function(planet){
-     this.planets.push(planet);
-   }
-   SolarSystem.prototype.removePlanet = function(){
+function SolarSystem() {
+  this.planets = [];
+  SolarSystem.prototype.addPlanet = function (planet) {
+    this.planets.push(planet);
+  }
+  SolarSystem.prototype.removePlanet = function () {
     this.planets.pop();
-   }
- }
+  }
+}
 
 /* Step 33
  *
@@ -641,34 +641,35 @@ class Person {
  *
  */
 
- function PrincessLeia(name, money, age, gender){
-  this.name = name;
-  this.money = money;
-  this.age = age;
-  this.gender = gender;
+function PrincessLeia(name, money, age, gender) {
   this.isInTrouble = null;
+  Person.call(this, name, money, age, gender);
 
   PrincessLeia.prototype.shootsGun = function () {
     this.isInTrouble = false;
     return "Leia shoots her gun wildly";
   }
-  PrincessLeia.prototype.getsInTrouble = function(){
+  PrincessLeia.prototype.getsInTrouble = function () {
     this.isInTrouble = true;
     return "Help me Obi-wan Kenobi, you're my only hope";
   }
-  PrincessLeia.prototype.marries = function(person){
-    if(person === "Han Solo"){
+  PrincessLeia.prototype.marries = function (person) {
+    if (person === "Han Solo") {
       return true;
     }
-    if(person === "Luke Skywalker"){
+    if (person === "Luke Skywalker") {
       return "Gross!";
     }
     return false;
   }
- }
- PrincessLeia.prototype = Object.create(Person.prototype);
+}
+PrincessLeia.prototype = Object.create(Person.prototype, {
+  constructor: {
+    value: Person
+  }
+});
 
- 
+
 /* Step 34
  *
  * Define an ES5 class named "Stapler" with properties "color"
@@ -687,6 +688,16 @@ class Person {
  *
  */
 
+function Stapler(color, maxPapers) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+  Stapler.prototype.staplePapers = function (number) {
+    if(number <= maxPapers){
+      return true;
+    }
+    return false;
+  }
+}
 
 /* Step 35
  *
