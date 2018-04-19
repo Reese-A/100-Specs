@@ -86,9 +86,9 @@ let club_name = "Fight Club";
  *   unknown => undefined
  */
 
-let gender= {
-  female:"female",
-  male:"male",
+let gender = {
+  female: "female",
+  male: "male",
   unknown: undefined,
 };
 
@@ -105,12 +105,12 @@ let gender= {
  *
  */
 
- let princess_leia ={
-   name:'Leia Organa',
-   money: 890,
-   age: 20,
-   gender: gender.female,
- };
+let princess_leia = {
+  name: 'Leia Organa',
+  money: 890,
+  age: 20,
+  gender: gender.female,
+};
 
 /* Step 11
  *
@@ -124,12 +124,12 @@ let gender= {
  *
  */
 
- let domains = {
-   'ycombinator.com': "198.41.190.47",
-   'laughingsquid.com': "162.159.247.97",
-   'slumlordhosting.com': "198.61.179.126",
-   'jsonformatter.curiousconcept.com': "104.28.5.70",
- }
+let domains = {
+  'ycombinator.com': "198.41.190.47",
+  'laughingsquid.com': "162.159.247.97",
+  'slumlordhosting.com': "198.61.179.126",
+  'jsonformatter.curiousconcept.com': "104.28.5.70",
+}
 
 /* Step 12
  *
@@ -170,6 +170,18 @@ let browsers = {
  *
  */
 
+let rainbow = {
+  colors: {
+    red: "#F0280A",
+    orange: "#FF8800",
+    yellow: "#FFDD00",
+    green: "#51AB0C",
+    blue: "#1593ED",
+    indigo: "#5215ED",
+    violet: "#A915ED",
+  },
+  isDouble: true,
+}
 
 /* Step 14
  *
