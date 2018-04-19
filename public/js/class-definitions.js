@@ -226,12 +226,12 @@ let DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"]
  *
  */
 
- let laptopCosts = {
-   MacBook: 1500,
-   Alienware: 2500,
-   HP: 499,
-   Surface: 320,
- };
+let laptopCosts = {
+  MacBook: 1500,
+  Alienware: 2500,
+  HP: 499,
+  Surface: 320,
+};
 
 /* Step 17
  *
@@ -283,14 +283,14 @@ let scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
  *
  */
 
- let beers = {
-   IPA: "Ale",
-   Lager: 'Strong',
-   Heffeweisen: "German",
-   Stout: ['Thick', 'Dark'],
-   Porter: "Bitter",
-   Ale: ['Light', 'Golden'],
- };
+let beers = {
+  IPA: "Ale",
+  Lager: 'Strong',
+  Heffeweisen: "German",
+  Stout: ['Thick', 'Dark'],
+  Porter: "Bitter",
+  Ale: ['Light', 'Golden'],
+};
 
 /* Step 20
  *
@@ -301,7 +301,7 @@ let scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
  *
  */
 
-function sahara_river(){
+function sahara_river() {
   return 'Nile River';
 }
 /* Step 21
@@ -315,7 +315,7 @@ function sahara_river(){
  *
  */
 
-function addNumbers(num1, num2){
+function addNumbers(num1, num2) {
   return num1 + num2;
 };
 
@@ -331,12 +331,12 @@ function addNumbers(num1, num2){
  *
  */
 
- function installLinux(linuxType){
-   if(linuxFlavors.indexOf(linuxType) !== -1){
-     return true;
-   }
-   return false;
- }
+function installLinux(linuxType) {
+  if (linuxFlavors.indexOf(linuxType) !== -1) {
+    return true;
+  }
+  return false;
+}
 
 /* Step 23
  *
@@ -356,16 +356,16 @@ function addNumbers(num1, num2){
  *
  */
 
- function drink(beerType) {
-  if(beers.hasOwnProperty(beerType)){
-    if(Array.isArray(beers[beerType])){
+function drink(beerType) {
+  if (beers.hasOwnProperty(beerType)) {
+    if (Array.isArray(beers[beerType])) {
       return `This ${beerType} is ${beers[beerType][0]} and ${beers[beerType][1]}.`
-    }else{
-    return `This ${beerType} is ${beers[beerType]}.`;
+    } else {
+      return `This ${beerType} is ${beers[beerType]}.`;
     }
   }
   return false;
- }
+}
 
 /* Step 24
  *
@@ -379,12 +379,12 @@ function addNumbers(num1, num2){
  *
  */
 
- function browseURL(browser){
-   if(browsers.hasOwnProperty(browser)){
+function browseURL(browser) {
+  if (browsers.hasOwnProperty(browser)) {
     return browsers[browser];
   }
   return false;
- }
+}
 
 /* Step 25
  *
@@ -396,7 +396,7 @@ function addNumbers(num1, num2){
  *
  */
 
-function listLivingOrgClass(){
+function listLivingOrgClass() {
   return `<ul>
   <li>Kingdom</li>
   <li>Phylum</li>
@@ -428,12 +428,12 @@ function listLivingOrgClass(){
  *
  */
 
- function favoritePlanet(current){
-   if(planets.includes(current)){
+function favoritePlanet(current) {
+  if (planets.includes(current)) {
     return `I'm from ${current}, but I wish I could go to ${planets[Math.floor(Math.random() * 7)]}.`
-   }
-   return current + " is not a planet!";
- }
+  }
+  return current + " is not a planet!";
+}
 
 /* Step 27
  *
@@ -458,20 +458,20 @@ function listLivingOrgClass(){
  *
  */
 
- class Person{
-  constructor(name, money, age, gender){
+class Person {
+  constructor(name, money, age, gender) {
     this.name = name,
-    this.money = money,
-    this.age = age,
-    this.gender = gender
+      this.money = money,
+      this.age = age,
+      this.gender = gender
   }
-  spendMoney(cost){
+  spendMoney(cost) {
     this.money = this.money - cost;
   }
-  earnMoney(pay){
+  earnMoney(pay) {
     this.money = this.money + pay;
   }
- }
+}
 
 /* Step 28
  *
@@ -485,6 +485,12 @@ function listLivingOrgClass(){
  *
  */
 
+ function purchaseLaptop(laptop){
+   if (laptopCosts.hasOwnProperty(laptop)){
+     return `${laptopCosts[laptop]}`;
+   }
+   return -1;
+ }
 
 /* Step 29
  *
