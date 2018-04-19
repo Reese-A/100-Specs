@@ -3,7 +3,7 @@
  * Declare a variable named "unicorn"
  * then set it's value to null;
  *
-*/
+ */
 
 let unicorn = null;
 
@@ -15,7 +15,7 @@ let unicorn = null;
  *
  */
 
- let videogame_system = "Atari"
+let videogame_system = "Atari"
 
 
 /* Step 3
@@ -25,7 +25,7 @@ let unicorn = null;
  *
  */
 
- let sahara_animal = "The Addax"
+let sahara_animal = "The Addax"
 
 
 /* Step 4
@@ -36,7 +36,7 @@ let unicorn = null;
  * Capitalize the names.
  */
 
- let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+let planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
 /* Step 5
  *
@@ -65,7 +65,7 @@ let golden_ratio = 1.61803398874;
  *
  */
 
- let earths_water_composition = 0.71;
+let earths_water_composition = 0.71;
 
 /* Step 8
  *
@@ -74,7 +74,7 @@ let golden_ratio = 1.61803398874;
  *
  */
 
- let club_name = "Fight Club";
+let club_name = "Fight Club";
 
 /* Step 9
  *
@@ -86,6 +86,11 @@ let golden_ratio = 1.61803398874;
  *   unknown => undefined
  */
 
+let gender= {
+  female:"female",
+  male:"male",
+  unknown: undefined,
+};
 
 /* Step 10
  *
@@ -868,7 +873,7 @@ var breakfast;
 var dinner;
 
 
- /* Steps 81 to 90
+/* Steps 81 to 90
  *
  * Create methods
  *
@@ -900,7 +905,7 @@ var dinner;
  */
 
 
- /* Step 83
+/* Step 83
  *
  * Declare a Shape method called getType that returns a string
  * containing the type of shape based on the sides property.
@@ -929,7 +934,7 @@ var dinner;
  */
 
 
- /* Step 85
+/* Step 85
  *
  * Declare a Door method called openClose that opens the door
  * if it is already closed, or closes the door if it is already open.
@@ -946,7 +951,7 @@ var dinner;
  */
 
 
- /* Step 87
+/* Step 87
  *
  * Declare a House method called isATallStory that accepts a
  * param number called storiesTooTall.
@@ -956,7 +961,7 @@ var dinner;
  */
 
 
- /* Step 88
+/* Step 88
  *
  * Declare a Lightbulb method called flipSwitch that accepts a
  * param string called on.  If on is the string "on", set
@@ -967,7 +972,7 @@ var dinner;
  */
 
 
- /* Step 89
+/* Step 89
  *
  * Declare a Cookie method called swipedByCookieMonster that accepts
  * a param called dayOfTheWeek.  If the cookie's flavor is "chocolate"
@@ -976,7 +981,7 @@ var dinner;
  */
 
 
- /* Step 90
+/* Step 90
  *
  * Declare a Meal method called containsJunkFood that returns true if
  * at least one of the items in the foods array is junk food, false otherwise.
@@ -991,7 +996,7 @@ var dinner;
  */
 
 
- /* Steps 91 to 100
+/* Steps 91 to 100
  *
  * Call methods
  *
@@ -1019,7 +1024,7 @@ var streetDriving;
 var forwardDriving;
 
 
- /* Step 93
+/* Step 93
  *
  * Call the getType method on two Shape instances
  * and assign the values to each variable below.
@@ -1039,7 +1044,7 @@ var openAClosedBox;
 var closeAnOpenBox;
 
 
- /* Step 95
+/* Step 95
  *
  * Call the openClose method on two Door instances
  * and assign the values to each variable below.
@@ -1059,7 +1064,7 @@ var redShoesSize7;
 var blackShoesSize10;
 
 
- /* Step 97
+/* Step 97
  *
  * Call the isATallStory method on two House instances
  * and assign the values to each variable below.
@@ -1069,7 +1074,7 @@ var farTooTallAStory;
 var shortStory;
 
 
- /* Step 98
+/* Step 98
  *
  * Call the switch method on two Lightbulb instances
  * and assign the values to each variable below.
@@ -1079,7 +1084,7 @@ var kitchenLightsOn;
 var porchLightsOff;
 
 
- /* Step 99
+/* Step 99
  *
  * Call the swipedByCookieMonster method on two Cookie instances
  * and assign the values to each variable below.
@@ -1089,7 +1094,7 @@ var cookieMonsterPwns;
 var cookieMonsterBlocked;
 
 
- /* Step 100
+/* Step 100
  *
  * Call the containsJunkFood method on two Meal instances
  * and assign the values to each variable below.
