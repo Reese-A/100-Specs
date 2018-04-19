@@ -356,6 +356,16 @@ function addNumbers(num1, num2){
  *
  */
 
+ function drink(beerType) {
+  if(beers.hasOwnProperty(beerType)){
+    if(Array.isArray(beers[beerType])){
+      return `This ${beerType} is ${beers[beerType][0]} and ${beers[beerType][1]}.`
+    }else{
+    return `This ${beerType} is ${beers[beerType]}.`;
+    }
+  }
+  return false;
+ }
 
 /* Step 24
  *
