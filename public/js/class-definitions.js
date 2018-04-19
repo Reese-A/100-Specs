@@ -331,6 +331,12 @@ function addNumbers(num1, num2){
  *
  */
 
+ function installLinux(linuxType){
+   if(linuxFlavors.indexOf(linuxType) !== -1){
+     return true;
+   }
+   return false;
+ }
 
 /* Step 23
  *
