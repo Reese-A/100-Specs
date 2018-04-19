@@ -999,6 +999,15 @@ Scientist.prototype = Object.create(Person.prototype);
  *
  */
 
+ class Shape{
+   constructor(sides){
+     if(sides >= 3){
+     this.sides = sides;
+   }else{
+     this.sides = null;
+   }
+ }
+}
 
 /**
  * Step 53
