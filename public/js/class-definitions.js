@@ -1111,8 +1111,8 @@ class Box{
 
 
 // Create 2 different species of animals
-var george;
-var nemo;
+var george =  new Animal('Monkey', 'male');
+var nemo = new Animal('Fish', 'male');
 
 // Create 2 different vehicles
 var civic;
