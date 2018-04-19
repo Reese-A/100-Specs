@@ -74,6 +74,7 @@ let golden_ratio = 1.61803398874;
  *
  */
 
+ let club_name = "Fight Club";
 
 /* Step 9
  *
