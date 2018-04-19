@@ -428,6 +428,12 @@ function listLivingOrgClass(){
  *
  */
 
+ function favoritePlanet(current){
+   if(planets.includes(current)){
+    return `I'm from ${current}, but I wish I could go to ${planets[Math.floor(Math.random() * 7)]}.`
+   }
+   return current + " is not a planet!";
+ }
 
 /* Step 27
  *
