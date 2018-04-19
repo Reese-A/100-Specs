@@ -379,6 +379,12 @@ function addNumbers(num1, num2){
  *
  */
 
+ function browseURL(browser){
+   if(browsers.hasOwnProperty(browser)){
+    return browsers[browser];
+  }
+  return false;
+ }
 
 /* Step 25
  *
