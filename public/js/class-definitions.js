@@ -532,6 +532,12 @@ class Person {
  *
  */
 
+ function Pen(color){
+   this.color = color;
+   Pen.prototype.write = function(message){
+     return `${color}: ${message}`;
+   }
+ }
 
 /* Step 31
  *
