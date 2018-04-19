@@ -301,6 +301,7 @@ let scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
  *
  */
 
+ let sahara_river = 'Nile River';
 
 /* Step 21
  *
