@@ -15,6 +15,8 @@ let unicorn = null;
  *
  */
 
+ let videogame_system = "Atari"
+
 
 /* Step 3
  *
