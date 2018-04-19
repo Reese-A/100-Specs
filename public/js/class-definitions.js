@@ -248,6 +248,7 @@ let DNA = ["nucleatides", "guanine", "adenine", "thymine", "cytosine"]
  *
  */
 
+let livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
 
 /* Step 18
  *
