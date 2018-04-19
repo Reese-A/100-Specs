@@ -967,6 +967,12 @@ Scientist.prototype = Object.create(Person.prototype);
  * @param {string} gender  male or female
  */
 
+ class Animal {
+   constructor(species, gender){
+     this.species = species;
+     this.gender = gender;
+   }
+ }
 
 /**
  * Step 51
